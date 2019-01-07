@@ -12,3 +12,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.btn-small {
+  height: 19px;
+  line-height: 19px;
+  padding: 0 3px;
+}
