@@ -21,3 +21,12 @@ code {
 nav .brand-logo {
   font-size: 1.3rem;
 }
+
+.page-footer {
+  padding: 0;
+  text-align: center;
+}
+
+main {
+  min-height: calc(100vh - 406px);
+}

@@ -28,7 +28,7 @@ class AddTodo extends Component {
       <div className="row">
         <div className="container">
           <form onSubmit={this.handleSubmit}>
-          <div className="input-field">
+            <div className="input-field">
               <input
                 type="text"
                 id="todoContent"
@@ -37,9 +37,7 @@ class AddTodo extends Component {
                 onChange={this.handleChange}
               />
               <label htmlFor="todoContent">Add new Todo</label>
-
-          </div>
-           
+            </div>
             <div>
               <button className="btn waves-effect waves-light">Add Todo</button>
             </div>

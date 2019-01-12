@@ -22,12 +22,14 @@ const Todos = ({ todos, deleteTodo }) => {
   );
 
   return (
-    <div className="row">
-      <div className="container">
-        <h4 className="teal-text">Todo's...</h4>
-        <ul className="todos collection">{todoList}</ul>
+    <main>
+      <div className="row">
+        <div className="container">
+          <h4 className="teal-text">Todo's...</h4>
+          <ul className="todos collection">{todoList}</ul>
+        </div>
       </div>
-    </div>
+    </main>
   );
 };
 
