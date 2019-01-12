@@ -18,3 +18,6 @@ code {
   line-height: 19px;
   padding: 0 3px;
 }
+nav .brand-logo {
+  font-size: 1.3rem;
+}

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Todos from "./Todos";
 import AddTodo from "./AddTodo";
+import Header from "./Header";
+import DeleteTodos from "./DeleteTodos";
 
 class App extends Component {
   state = {
@@ -28,6 +30,12 @@ class App extends Component {
     });
   };
 
+  deleteTodos = () => {
+    this.setState({
+      todos: []
+    });
+  };
+
   addTodo = todo => {
     console.log(todo);
     todo.id = Math.random();
@@ -41,6 +49,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header
+          title="Another Todo App"
+          subtitle="...but built in React and with Local Storage"
+        />
+        <DeleteTodos deleteTodos={this.deleteTodos} />
         <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
         <AddTodo addTodo={this.addTodo} />
       </div>

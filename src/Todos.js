@@ -12,19 +12,21 @@ const Todos = ({ todos, deleteTodo }) => {
               deleteTodo(todo.id);
             }}
           >
-            delete
+            X
           </button>
         </li>
       );
     })
   ) : (
-    <li className="center">You don't have any todo's</li>
+    <li className="center red-text">You don't have any todo's</li>
   );
 
   return (
-    <div className="container">
-      <h5 className="teal-text">Todo's...</h5>
-      <ul className="todos collection">{todoList}</ul>
+    <div className="row">
+      <div className="container">
+        <h4 className="teal-text">Todo's...</h4>
+        <ul className="todos collection">{todoList}</ul>
+      </div>
     </div>
   );
 };

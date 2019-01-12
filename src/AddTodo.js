@@ -25,21 +25,26 @@ class AddTodo extends Component {
 
   render() {
     return (
-      <div className="container">
-        <form className="col" onSubmit={this.handleSubmit}>
-          <div className="input-field col">
-            <input
-              type="text"
-              id="todoContent"
-              name="content"
-              value={this.state.content}
-              onChange={this.handleChange}
-            />
-            <label htmlFor="todoContent">Add new Todo</label>
-          </div>
+      <div className="row">
+        <div className="container">
+          <form onSubmit={this.handleSubmit}>
+          <div className="input-field">
+              <input
+                type="text"
+                id="todoContent"
+                name="content"
+                value={this.state.content}
+                onChange={this.handleChange}
+              />
+              <label htmlFor="todoContent">Add new Todo</label>
 
-          <button className="btn">Add Todo</button>
-        </form>
+          </div>
+           
+            <div>
+              <button className="btn waves-effect waves-light">Add Todo</button>
+            </div>
+          </form>
+        </div>
       </div>
     );
   }
