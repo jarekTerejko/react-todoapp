@@ -28,5 +28,6 @@ nav .brand-logo {
 }
 
 main {
-  min-height: calc(100vh - 406px);
+  /* min-height: calc(100vh - 406px); */
+  min-height: 100vh;
 }
