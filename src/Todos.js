@@ -87,7 +87,7 @@ class Todos extends Component {
         );
       })
     ) : (
-      <li>You do not have any todos...</li>
+      <li className="collection-item">You do not have any todos...</li>
     );
 
     return (
@@ -95,7 +95,7 @@ class Todos extends Component {
         <div className="row">
           <div className="container">
             <AddTodo addTodo={this.addTodo} />
-            <h4 className="teal-text">Todos...</h4>
+            <h4 className="blue-text">Todos...</h4>
             <ul className="collection">{todos}</ul>
             <DeleteTodos deleteTodos={this.deleteTodos} />
           </div>
